@@ -1,0 +1,104 @@
+/*Estilo padrão para as páginas "rodoviarios.html" e "aereos.html"*/
+
+
+main {
+    margin: 0 30px;
+}
+
+/*Estilizando o <figure> </figure*/
+.imagem {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+/*Legenda/Descrição da foto*/
+figcaption {
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+/*Título dos roteiros*/
+.roteiros {
+    font-size: 30px;
+}
+
+/*Tag <span> </span>*/
+.desconto {
+    color: var(--vermelho);
+}
+
+/*Tabela completa*/
+table {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--roxo);
+    margin-left: 40px;
+    border:1px solid var(--roxo);
+}
+
+/*"Cabeçalho da tabela"*/
+th {
+    padding: 15px;
+    background-color: var(--rosaClaro);
+}
+
+/*"Corpo da tabela"*/
+tr, td {
+    padding: 16px;
+    background-color: var(--branco);
+}
+
+/*Linha horizontal*/
+hr {
+    border: 1px dashed var(--roxo);
+    margin: 30px;
+}
+
+/*Linha horizontal específica*/
+#divisaoSection {
+    border: 1px ridge var(--rosaClaro);
+}
+
+/*Botões*/
+.botao {
+    margin: 25pt 20px;
+    padding: 5pt;
+    width: 80pt;
+    color: var(--branco);
+    background-color: var(--roxo);
+    border: 1px outset;
+    border-radius: 10px;
+}
+
+.botao:hover { /*ao passar o mouse por cima do botão*/
+    background-color: var(--rosa);
+    cursor: pointer; /*muda a forma do cursor*/
+}
+
+/*Parágrafo*/
+p {
+    font-size: 13pt;
+    margin: 30px;
+}
+
+/*Configuração específica para as tabelas de roteiros internacionais*/
+.internacional {
+    margin-bottom: 10px;
+}
+
+/*mexendo na âncora de link*/
+.ancora {
+    text-decoration: none; /*Sem sublinhado embaixo da palavra*/
+    color: var(--roxo);
+    text-align: right;
+    margin-block: 10pt; /*Distância igual na margem inferior e superior*/
+    font-size: larger;
+}
+
+.ancora:hover { /*ao passar o mouse por cima*/
+    color: var(--rosa);
+}
+
+.ancora:visited { /*quando o link já foi clicado anteriormente*/
+    color: none; /*nenhuma cor*/
+}

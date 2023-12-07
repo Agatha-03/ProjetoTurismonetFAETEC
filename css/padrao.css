@@ -1,0 +1,85 @@
+/*Estilo padrão de todas as páginas do site*/
+
+
+/*Criando variáveis para cores*/
+:root {
+    --roxo: rgb(54, 25, 107); /*na propriedade do seletor → var(--nomeDaCor);*/
+    --roxoClaro: rgb(233, 223, 241);
+    --branco: #f7f7f8;
+    --vermelho: rgb(224, 0, 0);
+    --rosa: rgb(212, 44, 123);
+    --rosaClaro: rgb(245, 188, 198);
+
+    --azulFacebook: #4267B2;
+    --rosaInstagram: #DD2A7B;
+    --verdeGmail: #34A853;
+}
+
+/*Para fazer o header e footer ocuparem 100% da página*/
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: var(--roxo);
+    padding: 15pt;
+}
+
+.tracinhoNoLink {
+    text-decoration: none;
+}
+
+/*Blocos dentro do cabeçalho*/
+.organizacaoHeader {
+    width: 60px; 
+    vertical-align: middle;
+}
+
+/*Nome do site*/
+#textoLogo, .linkTopo {
+    color: var(--roxoClaro);
+}
+
+.organizacaoHeader, #textoLogo, .linksHeader {
+    display: inline-block;
+}
+
+/*blocos de links*/
+.linksHeader {
+    float: right;
+    margin-top: 25px;
+}
+
+/*botao de link*/
+.estilo_link {
+    background: none;
+    border: none;
+    margin-left: 20px;
+}
+
+/*tag <a> do header*/
+.linkTopo {
+    text-decoration: none;
+    font-size: 15px;
+    margin-inline: 15px;
+}
+
+/*Corpo do site*/
+body {
+    background-color: var(--roxoClaro);
+}
+
+/*Estilizando os 2 ao mesmo tempo*/
+main, footer {
+    text-align: center;
+}
+
+/*Rodapé*/
+footer {
+    background-color: var(--roxo);
+    color: var(--branco);
+    padding: 10pt;
+}

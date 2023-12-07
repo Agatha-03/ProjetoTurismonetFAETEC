@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+		<meta charset="UTF-8" />
+		<title>Entrar</title>
+
+		<!--Definindo Palavras-Chaves-->
+		<meta name="keywords" content="viagem, turismo, roteiro, rodoviário, aéreo, brasil, exterior"/>
+
+		<!--Descrição da página-->
+		<meta name="description" content="Trabalho do curso Programador Web - FAETEC Campinho" />
+		<meta name="author" content="Agatha Martins"/>
+		<meta name="copyright" content="2023"/>
+		<meta name="robots" content="index"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!--Fontes do Google-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+		<!--icone-->
+		<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/8905/8905736.png" />
+
+		<!-- icones font awesome 4-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--CSS EXTERNO-->
+		<link type="text/css" rel="stylesheet" href="css/padrao.css" />
+
+		<!--CSS INTERNO-->
+		<style>
+
+            header {
+                margin-bottom: 50px;
+            }
+
+            footer {
+                margin-top: 50px;
+            }
+
+            span {
+                color: #0000EE; /*Azul de link*/
+                cursor: pointer;
+            }
+            
+            form, fieldset {
+                width: 400px;
+                text-align: center;
+                margin: auto;
+            }
+
+            fieldset {
+                background-color: var(--branco);
+                border-radius: 20px;
+                border: 1px solid var(--roxo);
+            }
+
+            fieldset:hover {
+                border: 1px solid var(--rosa);
+            }
+
+            .titulo-form {
+                text-align: center;
+            }
+
+            input[type=submit], [type=reset] {
+                margin: 0px 20px 10px 20px;
+                padding: 5pt;
+                width: 80pt;
+                color: var(--branco);
+                background-color: var(--roxo);
+                border: 1px outset;
+                border-radius: 10px;
+            }
+
+            input[type=submit]:hover, [type=reset]:hover {
+                background-color: var(--rosa);
+                border: 1px solid var(--roxo);
+                cursor: pointer;
+            }
+
+            ::placeholder {
+                color: var(--rosa);
+            }
+
+            #linha {
+                border: 1px solid var(--rosaClaro);
+                margin-block: 20px;
+            }
+
+		</style>
+
+        <script>
+            function validarLogin() {
+            
+            var login = document.entrar.user.value;
+            var senha = document.entrar.senha.value;
+            
+
+            if (login == 'example@email.com' && senha =='0123') 
+            {
+                window.alert('Dados confirmados!');
+                window.open('reservas.html');
+            }
+
+            else 
+            {
+                window.alert('Usuário ou senha incorretos.');
+            }
+        }
+    </script>
+        </script>
+
+
+	  </head>
+
+	  <body>
+		<!--Cabeçalho-->
+		<header>
+		<!--Link para voltar para página inicial-->	
+		<a class="tracinhoNoLink" href="index.html" title="Clique aqui para retornar à Página Inicial">
+			<div class="organizacaoHeader"> <!--Imagem utilizada para logo-->
+				<img src="https://cdn-icons-png.flaticon.com/512/3708/3708850.png"
+					 alt="Logo da Turismonet"
+					 width="90%"
+					 height="90%" />
+			</div>
+
+			<div class="organizacaoHeader"> <!--Nome do site-->
+				<h2 id="textoLogo">TURISMONET</h2>
+			</div>
+		</a>
+
+		<div class="linksHeader"> <!--Contatos, Quem somos e entrar-->
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="#">Ajuda</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="quemsomos.html">Quem somos</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="entrar.html">Entrar</a> </button>
+		</div>
+
+		</header>
+
+        <!--Conteúdo para as abas-->
+            <form method="post" name="entrar">
+                <fieldset>
+
+                    <!--título do formulário-->
+                    <h1 class="titulo-form">Login</h1>
+
+                    <!--email-->
+                    <label for="user">Usuário:</label>
+                    <input type="text" name="user" placeholder="Ex:ID, e-mail ou telefone" required>
+
+                    <br />
+                    <br />
+
+                    <!--senha-->
+                    <label for="senha">Senha:&nbsp;&nbsp;</label>
+                    <input type="password" name="senha" required>
+
+                    <br />
+                    <br />
+
+                    <!-- botao entrar e limpar -->
+                    
+                    <input type="submit" value="Acessar" onclick="validarLogin()">
+                    <input type="reset" value="Limpar">
+
+                    <!-- linha divisao -->
+                    <hr id="linha"/>
+
+                    <h5>Ainda não possui cadastro? <span title="Cadastro indisponível devido a ausência de banco de dados">Clique aqui</span>!</h5>
+
+                </fieldset>
+            </form>
+        </div>
+
+		<!--Rodapé-->
+		<footer>
+			<h3>&copy; 2023 Turismonet. Todos os direitos reservados de Agatha Martins.</h3>
+		</footer>
+	  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+		<meta charset="UTF-8" />
+		<title>Quem somos</title>
+
+
+		<!--Definindo Palavras-Chaves-->
+		<meta name="keywords" content="viagem, turismo, roteiro, rodoviário, aéreo, brasil, exterior"/>
+
+		<!--Descrição da página-->
+		<meta name="description" content="Trabalho do curso Programador Web - FAETEC Campinho" />
+		<meta name="author" content="Agatha Martins"/>
+		<meta name="copyright" content="2023"/>
+		<meta name="robots" content="index"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!--Fontes do Google-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+		<!--icone-->
+		<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/8905/8905736.png" />
+
+		<!-- icones font awesome 4-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--CSS EXTERNO-->
+		<link type="text/css" rel="stylesheet" href="css/padrao.css" />
+
+		<!--CSS INTERNO-->
+		<style>
+
+			#titulo {
+				text-align: center;
+				margin-block: 50px;
+			}
+
+			footer {
+				margin-top: 80px;
+			}
+
+            #descQuemSomos {
+                background-color: var(--branco);
+				margin: auto;
+                border-radius: 20px;
+                width: 75%;
+                border: 1px ridge var(--rosa);
+                padding: 10px;
+            }
+
+			.imagem, .texto {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .imagem {
+                text-align: center;
+                height: 200px;
+                width: 200px;
+            }
+
+            .texto {
+                text-align: justify;
+                height: 200px;
+                width: 800px;
+            }
+
+            #nome {
+                margin: 0;
+            }
+
+		</style>
+
+	  </head>
+
+	  <body>
+		<!--Cabeçalho-->
+		<header>
+		<!--Link para voltar para página inicial-->	
+		<a class="tracinhoNoLink" href="index.html" title="Clique aqui para retornar à Página Inicial">
+			<div class="organizacaoHeader"> <!--Imagem utilizada para logo-->
+				<img src="https://cdn-icons-png.flaticon.com/512/3708/3708850.png"
+					 alt="Logo da Turismonet"
+					 width="90%"
+					 height="90%" />
+			</div>
+
+			<div class="organizacaoHeader"> <!--Nome do site-->
+				<h2 id="textoLogo">TURISMONET</h2>
+			</div>
+		</a>
+
+		<div class="linksHeader"> <!--Contatos, Quem somos e entrar-->
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="#">Ajuda</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="quemsomos.html">Quem somos</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="entrar.html">Entrar</a> </button>
+		</div>
+
+		</header>
+
+        <!-- bloco Agatha -->
+
+		<h2 id="titulo">Conheça um pouco da desenvolvedora do site</h2>
+
+        <div id="descQuemSomos">
+            <div class="imagem">
+                
+                <img src="https://cdn.picrew.me/shareImg/org/202310/644129_1FqHtBbh.png" alt="Avatar simbolizando a Agatha"
+                    width="80%" height="80%">
+
+                <br />
+                <h3 id="nome">Agatha Martins</h3>
+            </div>
+
+            <div class="texto">
+                <p> Estudante de Design Digital (com ênfase em Experiência do Usuário), possuindo noções básicas em Linguagem
+                    de Programação C e Administração, e noções intermediárias em Informática.
+                </p>
+
+                <p> Cursos em processo: Design Gráfico e Programador WEB.
+                    <br>
+                    Hobby: Participar de Pesquisas de Mercado.    
+                </p>
+
+                <p>
+                    Contatos: <i style="color: var(--azulFacebook);" class="fa">&#xf082;</i> Agatha Martins |
+                    <i style="color: var(--rosaInstagram)" class="fa">&#xf16d;</i> @am.16001 |
+                    <i style="color: var(--verdeGmail)" class="fa">&#xf1a0;</i> agathamartins160@gmail.com
+                </p>
+            </div>
+        </div>
+
+		<!--Rodapé-->
+		<footer>
+			<h3>&copy; 2023 Turismonet. Todos os direitos reservados de Agatha Martins.</h3>
+		</footer>
+	  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+		<meta charset="UTF-8" />
+		<title>Contato</title>
+
+		<!--Definindo Palavras-Chaves-->
+		<meta name="keywords" content="viagem, turismo, roteiro, rodoviário, aéreo, brasil, exterior"/>
+
+		<!--Descrição da página-->
+		<meta name="description" content="Trabalho do curso Programador Web - FAETEC Campinho" />
+		<meta name="author" content="Agatha Martins"/>
+		<meta name="copyright" content="2023"/>
+		<meta name="robots" content="index"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!--Fontes do Google-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+		<!--icone-->
+		<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/8905/8905736.png" />
+
+		<!-- icones font awesome 4-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- icone google -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<!--CSS EXTERNO-->
+		<link type="text/css" rel="stylesheet" href="css/padrao.css" />
+
+		<!--CSS INTERNO-->
+		<style>
+
+		main {
+			margin-block: 50px;
+		}
+
+		.blocosContato {
+			width: 250px;
+			display: inline-block;
+			/* margin: auto; */
+			text-align: center;
+		}
+
+		.botoes, .material-icons, .fa {
+			background-color: var(--roxoClaro);
+			border: none;
+			font-size: 50px;
+		}
+
+		#contatos {
+			margin-bottom: 50px;
+			font-size: 30px;
+		}
+
+		#textoDesc {
+			margin-bottom: 80px;
+		}
+
+		</style>
+
+	  </head>
+
+	  <body>
+		<!--Cabeçalho-->
+		<header>
+		<!--Link para voltar para página inicial-->	
+		<a class="tracinhoNoLink" href="index.html" title="Clique aqui para retornar à Página Inicial">
+			<div class="organizacaoHeader"> <!--Imagem utilizada para logo-->
+				<img src="https://cdn-icons-png.flaticon.com/512/3708/3708850.png"
+					 alt="Logo da Turismonet"
+					 width="90%"
+					 height="90%" />
+			</div>
+
+			<div class="organizacaoHeader"> <!--Nome do site-->
+				<h2 id="textoLogo">TURISMONET</h2>
+			</div>
+		</a>
+
+		<div class="linksHeader"> <!--Contatos, Quem somos e entrar-->
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="#">Ajuda</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="quemsomos.html">Quem somos</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="entrar.html">Entrar</a> </button>
+		</div>
+
+		</header>
+       
+		<!-- formatar titulo, por margem e tentar centralizar-->
+
+		<main>
+			<h2 id="contatos">Contatos</h2>
+
+			<h3 id="textoDesc">Dúvidas? Comentários? Teve algum problema? Utilize os números ou E-mail abaixo, atendemos de 10h às 18h.</h3>
+
+        	<div id="contactUS">
+            	<!--inserir icones de email, whatsapp e telefone-->
+
+            	<div class="blocosContato"> <!--Telefone Fixo-->
+
+                	<button class="botoes"> <i class="fa fa-phone" style="color: var(--rosa);"></i> </button>
+					<h5 class="contato">(21) 0000-0000</h5>
+            	</div>
+
+            	<div class="blocosContato"> <!--WhatsApp-->
+                	<button class="botoes"> <i class="fa fa-whatsapp" style="color: #0a8f3b;" ></i> </button>
+					<h5 class="contato">(21) 90000-0000</h5>
+				
+				</div>
+
+            	<div class="blocosContato"> <!--E-mail-->
+                	<button class="botoes"> <i class="material-icons" style="color: var(--vermelho);">mail_outline</i> </button>
+                	<a style="color: black; text-decoration: none;" href="mailto:mensagem@turismonet.com.br" target:_blank>
+						<h5 class="contato">mensagem@turismonet.com.br</h5>
+                	</a>
+
+            	</div>
+        	</div>        
+		</main>
+
+		<!--Rodapé-->
+		<footer>
+			<h3>&copy; 2023 Turismonet. Todos os direitos reservados de Agatha Martins.</h3>
+		</footer>
+	  </body>
+</html>
+<!-- formatar titulo, por margem e tentar centralizar-->

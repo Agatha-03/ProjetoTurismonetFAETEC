@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+		<meta charset="UTF-8" />
+		<title>Reserva de Passagens</title>
+
+		<!--Definindo Palavras-Chaves-->
+		<meta name="keywords" content="viagem, turismo, roteiro, rodoviário, aéreo, brasil, exterior"/>
+
+		<!--Descrição da página-->
+		<meta name="description" content="Trabalho do curso Programador Web - FAETEC Campinho" />
+		<meta name="author" content="Agatha Martins"/>
+		<meta name="copyright" content="2023"/>
+		<meta name="robots" content="index"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!--Fontes do Google-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+		<!--icone-->
+		<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/8905/8905736.png" />
+
+		<!-- icones font awesome 4-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--CSS EXTERNO-->
+		<link type="text/css" rel="stylesheet" href="css/padrao.css" />
+
+		<!--CSS INTERNO-->
+		<style>
+			/*título da pag*/
+			#titulo-pag {
+				text-align: center;
+				margin-block: 35px;
+			}
+
+			.espacarInput {
+				float: right;
+			}
+
+			table {
+				margin: auto;
+			}
+
+			/*Título do form*/
+			legend  {
+				text-align: center;
+			}
+
+			#titulo1 {
+				background-color: var(--roxoClaro);
+			}
+
+			#titulo2 {
+				background-color: var(--branco);
+			}
+
+			#titulo1, #titulo2 {
+				padding: 0px 5px 0px 5px;
+				border-radius: 10px;
+				border-bottom: 2px solid var(--roxo);
+			}
+
+			/*borda do form*/
+			#borda1 {
+				width: 40%;
+				margin: auto;
+				background-color: var(--branco);
+				border-radius: 10px;
+			}
+
+			#borda1, #borda2 {
+				border-color: var(--roxo);
+			}
+
+			#borda1:hover, #borda2:hover {
+				border-color: var(--rosa);
+			}
+
+			#borda2 {
+				background-color: var(--rosaClaro);
+				border-radius: 10px;
+				margin-block: 20px;
+			}
+
+			/*placeholder*/
+			::placeholder {
+				color: var(--rosa)
+			}
+
+			/*Customizando o "radio"*/
+			input[type=radio] {
+         		appearance: none;
+         		padding: 5px;
+         		background-color: var(--branco);
+         		border-radius:50%;
+		 		border:1px solid var(--roxo);
+      		}
+
+      		input[type=radio]:checked {
+         		background-color: var(--rosa);
+      		}
+
+			/*Botao*/
+			input[type=submit], #botaoVoltar {
+                margin: 0px 20px 10px 20px;
+                padding: 5pt;
+                width: 80pt;
+                color: var(--branco);
+                background-color: var(--roxo);
+                border: 1px outset;
+                border-radius: 10px;
+				cursor: pointer;
+            }
+
+			form {
+				margin-bottom: 20px;
+			}
+
+			span {
+				font-weight: bold;
+			}
+		</style>
+
+	  </head>
+
+	  <body>
+		<!--Cabeçalho-->
+		<header>
+		<!--Link para voltar para página inicial-->	
+		<a class="tracinhoNoLink" href="index.html" title="Clique aqui para retornar à Página Inicial">
+			<div class="organizacaoHeader"> <!--Imagem utilizada para logo-->
+				<img src="https://cdn-icons-png.flaticon.com/512/3708/3708850.png"
+					 alt="Logo da Turismonet"
+					 width="90%"
+					 height="90%" />
+			</div>
+
+			<div class="organizacaoHeader"> <!--Nome do site-->
+				<h2 id="textoLogo">TURISMONET</h2>
+			</div>
+		</a>
+
+		<div class="linksHeader"> <!--Contatos, Quem somos e entrar-->
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="#">Ajuda</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="quemsomos.html">Quem somos</a> </button>
+
+			<button type="button" class="estilo_link"> <a class="linkTopo" href="entrar.html">Entrar</a> </button>
+		</div>
+
+		</header>
+
+        <form method="post" name="reservarPassagem">
+
+			<!--título do formulário-->
+			<h1 id="titulo-pag">Reserva de Passagens</h1>
+
+			<fieldset id="borda1">
+				<legend id="titulo1">Dados do usuário: <span>example@gmail.com</span> </legend>
+
+				<br>
+				<table>
+					<tr> <!--linha 1-->
+						<td>
+							<!-- Nome -->
+							<label for="nome">Nome:</label>
+								<input type="text" name="nome" class="espacarInput"/>
+						</td>
+
+						<td>
+							<!-- cpf -->
+							<label for="cpf">&nbsp;CPF:</label>
+								<input type="number" name="cpf" class="espacarInput" placeholder="Digite sem pontos e traço">
+						</td>
+					</tr>
+
+					<tr> <!--linha 2-->
+						<td>
+							<!-- rg -->
+							<label for="rg">RG:</label>
+								<input type="number" name="rg" class="espacarInput" placeholder="Digite sem pontos e traço">
+						</td>
+
+						<td>
+							<!-- passaporte -->
+							<label for="pass">&nbsp;Passaporte:</label>
+								<input type="text" name="pass" placeholder="BR000000000"/>
+						</td>
+					</tr>
+
+					<tr> <!--linha 3-->
+						<td>
+							<!-- nascimento -->
+							<label for="nascimento">Data de Nasc. :</label>
+								<input type="date" name="nascimento">
+						</td>
+
+						<td>
+							<!-- nacionalidade -->
+							<label for="nacio">&nbsp;Nacionalidade:</label>
+								<select name="nacio" class="espacarInput">
+									<option value="default">(Selecione)</option>
+									<option value="op1">Brasileira</option>
+									<option value="op2">Estrangeira</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+
+
+				<fieldset id="borda2">
+					<legend id="titulo2">Dados da Reserva</legend>
+
+					<table>
+						<tr> <!--linha 1-->
+							<td>
+								<!-- destino -->
+								<label for="destino">Destino:</label>
+									<select name="destino">
+										<option value="default">(Selecione)</option>
+
+										<optgroup label="Nacional">
+											<option value="op1">Rio de Janeiro - RJ</option>
+											<option value="op2">São Paulo - SP</option>
+											<option value="op3">Florianópolis - SC</option>
+											<option value="op4">Belém - PA</option>
+											<option value="op5">Belo Horizonte - MG</option>
+											<option value="op6">Recife - PE</option>
+											<option value="op7">Campo Grande - MS</option>
+										</optgroup>
+						
+										<optgroup label="Internacional">
+											<option value="op8">Santiago - CHL</option>
+											<option value="op9">Buenos Aires - ARG</option>
+											<option value="op10">Sucre - BOL</option>
+											<option value="op11">Vaduz - LIT</option>
+											<option value="op12">Pequim - CHN</option>
+											<option value="op13">Naji - FIJ</option>
+											<option value="op14">Nova York - EUA</option>
+										</optgroup>	
+									</select>
+							</td>
+
+							<td>
+								<!-- roteiro -->
+									<label for="roteiro">&nbsp;Roteiro:</label>
+										<input type="radio" name="bus">
+											<label for="bus">Rodoviário</label>
+
+									<input type="radio" name="airplane">
+										<label for="airplane">Aéreo</label>
+							</td>
+						</tr>
+
+						<tr> <!--linha 2-->
+							<td>
+								<!-- saida  -->
+								<label for="saida">Saída:</label>
+									<input type="date" name="saida" class="espacarInput">
+							</td>
+
+							<td>
+								<!-- companhia -->
+								<label for="comp">&nbsp;Companhia:</label>
+									<select name="comp">
+										<option value="default">(Selecione)</option>
+										<optgroup label="Rodoviária">
+											<option value="op1">Águia Branca</option>
+											<option value="op2">Ceturb</option>
+											<option value="op3">GVBus</option>
+											<option value="op4">Crucero Del Norte</option>
+											<option value="op5">RedCoach</option>
+											<option value="op6">Avanza Grupo</option>
+											<option value="op7">Pluss Chile</option>
+										</optgroup>
+						
+										<optgroup label="Aérea">
+											<option value="op8">LATAM Airlines</option>
+											<option value="op9">Azul</option>
+											<option value="op10">Gol</option>
+											<option value="op11">Tap Air Portugal</option>
+											<option value="op12">All Nippon Airways</option>
+											<option value="op13">KLM Royal Dutch Airlines</option>
+											<option value="op14">Fiji Airways</option>
+										</optgroup>	
+									</select>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<!-- botao entrar e limpar -->
+				<input type="submit" value="Reservar">
+
+				<a href="rodoviarios.html">
+					<input type="button" id="botaoVoltar" value="Voltar" style="float: right;">
+				</a>
+				
+
+			</fieldset>
+		</form>
+
+		<br>
+		<!--Rodapé-->
+		<footer>
+			<h3>&copy; 2023 Turismonet. Todos os direitos reservados de Agatha Martins.</h3>
+		</footer>
+	  </body>
+</html>
